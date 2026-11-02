@@ -1,0 +1,1770 @@
+{
+  "pbtResults": {
+    "19.3 Property test — escalation geotag attachment (Android)": {
+      "status": "not_run",
+      "lastRunTimestamp": 1793584946346
+    },
+    "22.3 Property test — escalation photo included in push (iOS)": {
+      "status": "not_run",
+      "lastRunTimestamp": 1793586718720
+    },
+    "23.3 Property test — escalation photo included in push (Android)": {
+      "status": "not_run",
+      "lastRunTimestamp": 1793586866096
+    }
+  },
+  "executionHistory": {
+    "1.1 Create iOS app project structure and layer skeleton": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576761570
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576772132
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576990718
+      }
+    ],
+    "1.2 Define shared domain model types and result enums (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762464
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577045634
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577256583
+      }
+    ],
+    "2.1 Create Android app project structure and layer skeleton": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762577
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576773122
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576991446
+      }
+    ],
+    "2.2 Define shared domain model types and result sealed classes (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762629
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577046398
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577255656
+      }
+    ],
+    "3.1 Implement GRDB schema and migrations (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762686
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577260403
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577646675
+      }
+    ],
+    "3.2 Implement photo blob file store (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762719
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577261276
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577647613
+      }
+    ],
+    "4.1 Implement Room entities, DAOs, and migrations (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762750
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577262723
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577649002
+      }
+    ],
+    "4.2 Implement photo blob file store (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762786
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577263544
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577649938
+      }
+    ],
+    "5.1 Implement repositories with transactional, storage-aware saves (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762831
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577654906
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578006749
+      }
+    ],
+    "5.2 Property test — persistence round-trip (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762863
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579002999
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579435769
+      }
+    ],
+    "5.3 Property test — capture requires no network (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762897
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579004089
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579434849
+      }
+    ],
+    "5.4 Property test — atomic save preserves prior state (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762930
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579440126
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579750902
+      }
+    ],
+    "5.5 Property test — QR lookup ordering and open-task filtering (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762964
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579441076
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579752300
+      }
+    ],
+    "5.6 Unit test — storage-full rejection (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576762997
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579442474
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579753284
+      }
+    ],
+    "6.1 Implement repositories with transactional, storage-aware saves (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763031
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577655826
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578005329
+      }
+    ],
+    "6.2 Property test — persistence round-trip (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763064
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579992901
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793580695664
+      }
+    ],
+    "6.3 Property test — capture requires no network (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763098
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579994343
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793580697594
+      }
+    ],
+    "6.4 Property test — atomic save preserves prior state (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763133
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579995246
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793580696610
+      }
+    ],
+    "6.5 Property test — QR lookup ordering and open-task filtering (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763165
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793580701462
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581175103
+      }
+    ],
+    "6.6 Unit test — storage-full rejection (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763200
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793580702486
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581175940
+      }
+    ],
+    "7. Checkpoint — storage and repository foundation": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763233
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586900296
+      }
+    ],
+    "8.1 Implement SteamTable and SubcoolEstimator (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763266
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577657269
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578009108
+      }
+    ],
+    "8.2 Property test — subcool definition (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763301
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578418587
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578804050
+      }
+    ],
+    "8.3 Property test — subcool monotonicity (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763335
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578812778
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578995128
+      }
+    ],
+    "8.4 Property test — flashing-zone classification (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763369
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578814179
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578994365
+      }
+    ],
+    "8.5 Property test — out-of-range pressure rejection (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763400
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578815138
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578992947
+      }
+    ],
+    "8.6 Property test — invalid subcool input rejection (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763437
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578816531
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578991949
+      }
+    ],
+    "9.1 Implement production and injection log validators (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763497
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577659327
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578010061
+      }
+    ],
+    "9.2 Property test — numeric-format validation (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763530
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578420515
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578807332
+      }
+    ],
+    "9.3 Property test — range validation per field (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763564
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578817325
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578990556
+      }
+    ],
+    "9.4 Property test — save blocked exactly on invalid fields (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763598
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578999733
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579433898
+      }
+    ],
+    "9.5 Property test — valid log association and timestamp (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763631
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579000694
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579432503
+      }
+    ],
+    "9.6 Unit test — range boundary examples (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763664
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579002067
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579431121
+      }
+    ],
+    "10.1 Implement WellLookupUseCase and EscalationValidator (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763699
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578416254
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578806385
+      }
+    ],
+    "10.2 Property test — QR lookup independent of connectivity (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763733
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581183779
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581718625
+      }
+    ],
+    "10.3 Property test — escalation save requires priority and well (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763765
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581184731
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581717707
+      }
+    ],
+    "11.1 Implement SteamTable and SubcoolEstimator (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763799
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577658242
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578007657
+      }
+    ],
+    "11.2 Property test — subcool definition (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763834
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578419537
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578804987
+      }
+    ],
+    "11.3 Property test — subcool monotonicity (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763875
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579444523
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579749949
+      }
+    ],
+    "11.4 Property test — flashing-zone classification (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763901
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579443873
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579748558
+      }
+    ],
+    "11.5 Property test — out-of-range pressure rejection (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763935
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579757267
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579982621
+      }
+    ],
+    "11.6 Property test — invalid subcool input rejection (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576763970
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579758643
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579983572
+      }
+    ],
+    "12.1 Implement production and injection log validators (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764000
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578018499
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578410624
+      }
+    ],
+    "12.2 Property test — numeric-format validation (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764036
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579759594
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579984984
+      }
+    ],
+    "12.3 Property test — range validation per field (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764068
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579761004
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579985914
+      }
+    ],
+    "12.4 Property test — save blocked exactly on invalid fields (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764103
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579761912
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579986979
+      }
+    ],
+    "12.5 Property test — valid log association and timestamp (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764137
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579997570
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793580693340
+      }
+    ],
+    "12.6 Unit test — range boundary examples (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764170
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579996695
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793580694261
+      }
+    ],
+    "13.1 Implement WellLookupUseCase and EscalationValidator (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764204
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578417186
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578808420
+      }
+    ],
+    "13.2 Property test — QR lookup independent of connectivity (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764238
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581185697
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581720036
+      }
+    ],
+    "13.3 Property test — escalation save requires priority and well (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764310
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581726992
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581818278
+      }
+    ],
+    "14. Checkpoint — pure domain logic (primary PBT target)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764336
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586903004
+      }
+    ],
+    "15.1 Implement SyncEngine with per-record state machine (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764371
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581180929
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581721485
+      }
+    ],
+    "15.2 Property test — oldest-first push ordering (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764409
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581832272
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582496203
+      }
+    ],
+    "15.3 Property test — acknowledgment yields synchronized state (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764435
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582192611
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582497535
+      }
+    ],
+    "15.4 Property test — no data loss on failed sync (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764469
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582193529
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582498951
+      }
+    ],
+    "15.5 Property test — five-retry boundary and manual-retry reset (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764504
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582194933
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582499889
+      }
+    ],
+    "15.6 Property test — pending-state invariant (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764537
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582195926
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582500916
+      }
+    ],
+    "15.7 Property test — sync idempotency (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764567
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582505167
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582811002
+      }
+    ],
+    "15.8 Integration test — connectivity timing (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764605
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582506592
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582811678
+      }
+    ],
+    "16.1 Implement SyncEngine with per-record state machine (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764634
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581182379
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581722142
+      }
+    ],
+    "16.2 Property test — oldest-first push ordering (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764669
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582507543
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582807302
+      }
+    ],
+    "16.3 Property test — acknowledgment yields synchronized state (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764704
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582508920
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582808651
+      }
+    ],
+    "16.4 Property test — no data loss on failed sync (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764735
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582509690
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582809625
+      }
+    ],
+    "16.5 Property test — five-retry boundary and manual-retry reset (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764770
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582816128
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793583314140
+      }
+    ],
+    "16.6 Property test — pending-state invariant (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764802
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582817075
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793583135079
+      }
+    ],
+    "16.7 Property test — sync idempotency (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764837
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582818469
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793583134189
+      }
+    ],
+    "16.8 Integration test — connectivity timing and background execution (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764872
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582819209
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793583133240
+      }
+    ],
+    "17. Checkpoint — sync engine": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764901
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586905510
+      }
+    ],
+    "18.1 Implement QR scanner (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764936
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581827650
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582184020
+      }
+    ],
+    "18.2 Implement location provider and escalation capture (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576764970
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581829091
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582185355
+      }
+    ],
+    "18.3 Property test — escalation geotag attachment (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765004
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793584781025
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585045295
+      }
+    ],
+    "18.4 Property test — location-unavailable fallback (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765068
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793584779633
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585044531
+      }
+    ],
+    "18.5 Integration test — scanner timing (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765101
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793584781978
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585043129
+      }
+    ],
+    "19.1 Implement QR scanner (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765135
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581830009
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582186292
+      }
+    ],
+    "19.2 Implement location provider and escalation capture (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765168
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581831435
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582187342
+      }
+    ],
+    "19.3 Property test — escalation geotag attachment (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765203
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793584783085
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585042190
+      }
+    ],
+    "19.4 Property test — location-unavailable fallback (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765238
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585050329
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585308428
+      }
+    ],
+    "19.5 Integration test — scanner timing (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765268
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585051118
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585309101
+      }
+    ],
+    "20.1 Implement well selection and wellhead log forms (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765304
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793583319280
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793584769018
+      }
+    ],
+    "20.2 Implement subcool estimator, QR result, and escalation screens (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765337
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793583321646
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793584770399
+      }
+    ],
+    "20.3 Implement sync-state and offline indicators (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765370
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793583323895
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793584771817
+      }
+    ],
+    "20.4 UI tests — form rendering and sync-state display (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765413
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585314706
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585896782
+      }
+    ],
+    "21.1 Implement well selection and wellhead log forms (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765446
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793583320241
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793584772728
+      }
+    ],
+    "21.2 Implement subcool estimator, QR result, and escalation screens (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765478
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793583323086
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793584773726
+      }
+    ],
+    "21.3 Implement sync-state and offline indicators (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765510
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793584778679
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585040792
+      }
+    ],
+    "21.4 UI tests — form rendering and sync-state display (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765539
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585315622
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585894467
+      }
+    ],
+    "22.1 Implement REST API client (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765570
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585317024
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585895820
+      }
+    ],
+    "22.2 Wire sync engine to the API client and finalize app graph (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765605
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585906822
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586479373
+      }
+    ],
+    "22.3 Property test — escalation photo included in push (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765636
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586490090
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586884581
+      }
+    ],
+    "22.4 Integration test — end-to-end sync against stub backend (iOS)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765671
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586491518
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586885446
+      }
+    ],
+    "23.1 Implement REST API client (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765702
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585317828
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585897738
+      }
+    ],
+    "23.2 Wire sync engine to the API client and finalize app graph (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765738
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585907723
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586479984
+      }
+    ],
+    "23.3 Property test — escalation photo included in push (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765768
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586492483
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586886886
+      }
+    ],
+    "23.4 Integration test — end-to-end sync against stub backend (Android)": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765805
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586493379
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586887709
+      }
+    ],
+    "24. Final checkpoint — full build and all tests": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793576765835
+      },
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586908009
+      }
+    ],
+    "2. Android: Project scaffolding and shared domain contracts": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577255742
+      }
+    ],
+    "1. iOS: Project scaffolding and shared domain contracts": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577256670
+      }
+    ],
+    "3. iOS: Local store — schema, migrations, and blob store": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577647708
+      }
+    ],
+    "4. Android: Local store — schema, migrations, and blob store": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793577650021
+      }
+    ],
+    "8. iOS: Pure domain logic — subcool estimator": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793578995192
+      }
+    ],
+    "9. iOS: Pure domain logic — validators": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579433930
+      }
+    ],
+    "5. iOS: Repository layer over the local store": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579753339
+      }
+    ],
+    "11. Android: Pure domain logic — subcool estimator": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793579983608
+      }
+    ],
+    "12. Android: Pure domain logic — validators": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793580694299
+      }
+    ],
+    "6. Android: Repository layer over the local store": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581175975
+      }
+    ],
+    "10. iOS: Pure domain logic — well lookup and escalation assembly": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581718661
+      }
+    ],
+    "13. Android: Pure domain logic — well lookup and escalation assembly": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793581818355
+      }
+    ],
+    "15. iOS: Sync engine and connectivity": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793582811735
+      }
+    ],
+    "16. Android: Sync engine and connectivity": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793583314185
+      }
+    ],
+    "18. iOS: Platform integrations — camera/QR, location": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585045335
+      }
+    ],
+    "19. Android: Platform integrations — camera/QR, location": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585309181
+      }
+    ],
+    "21. Android: UI screens and view models": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585894519
+      }
+    ],
+    "20. iOS: UI screens and view models": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793585896818
+      }
+    ],
+    "22. iOS: Cloud backend API client and end-to-end wiring": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586885494
+      }
+    ],
+    "23. Android: Cloud backend API client and end-to-end wiring": [
+      {
+        "executionId": "c0945bb6-3402-4145-9a8c-702b85dc883e",
+        "chatSessionId": "sess_e6acd1fb-beb7-4a8c-af31-9d3b0c11b185",
+        "timestamp": 1793586887747
+      }
+    ]
+  }
+}
