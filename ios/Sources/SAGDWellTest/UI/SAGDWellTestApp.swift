@@ -18,12 +18,29 @@
 #if canImport(SwiftUI)
 import SwiftUI
 
-@main
+// NOTE: This `App` type is defined without `@main`. The process entry point is
+// provided by the host app target (ios/App), which links this package as a
+// library and presents `SAGDWellTestRootView`. Declaring `@main` here too would
+// produce a duplicate `_main` symbol when linked into the app. This type is
+// retained for SwiftUI previews and as the canonical scene definition.
 struct SAGDWellTestApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
         }
+    }
+}
+
+/// Public entry view for host app targets.
+///
+/// The package builds a library, which cannot launch on its own, so a thin
+/// app target provides the process entry point and presents this view. It
+/// forwards to the internal `RootView`, keeping the composition root (store,
+/// repositories, sync engine) encapsulated in the package.
+public struct SAGDWellTestRootView: View {
+    public init() {}
+    public var body: some View {
+        RootView()
     }
 }
 
@@ -75,8 +92,15 @@ struct AppRootView: View {
             OfflineIndicatorView(viewModel: offlineIndicatorViewModel)
             WellSelectionView(
                 viewModel: selectionViewModel,
-                logRepository: graph.logRepository
+                logRepository: graph.logRepository,
+                graph: graph
             )
+        }
+        // Fill the local store from the backend at launch (a no-op when
+        // offline or unconfigured), then reload the list from the store.
+        .task {
+            await graph.refreshReferenceData()
+            await selectionViewModel.load()
         }
     }
 }
@@ -86,7 +110,17 @@ extension AppGraph {
     /// local store could not be opened so the entry point can degrade to a
     /// diagnostic screen.
     static func tryMake() -> AppGraph? {
-        try? AppGraph.make(configuration: .fromEnvironment())
+        let configuration = AppConfiguration.fromEnvironment()
+        let graph = try? AppGraph.make(configuration: configuration)
+        #if DEBUG
+        // Debug builds only, and only with no backend configured: populate
+        // sample wells when the store is empty. With a real backend the list
+        // comes from the server, so fake wells are never mixed in.
+        if !AppGraph.isBackendConfigured(configuration) {
+            graph?.seedSampleDataIfEmpty()
+        }
+        #endif
+        return graph
     }
 }
 

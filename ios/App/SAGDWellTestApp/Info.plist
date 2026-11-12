@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Read at launch by AppConfiguration.fromEnvironment(); values come from
+	     Config/Shared.xcconfig and the git-ignored Config/Local.xcconfig. -->
+	<key>SAGDBackendBaseURL</key>
+	<string>$(SAGD_BACKEND_BASE_URL)</string>
+	<key>SAGDBackendAuthToken</key>
+	<string>$(SAGD_BACKEND_AUTH_TOKEN)</string>
+	<!-- The app only uses the system's HTTPS/TLS, which is exempt from export
+	     documentation. Confirm this with your company's compliance contact. -->
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+</dict>
+</plist>

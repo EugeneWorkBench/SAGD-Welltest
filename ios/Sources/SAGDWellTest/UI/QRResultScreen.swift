@@ -146,8 +146,13 @@ public struct QRResultScreen: View {
 
     @ObservedObject private var viewModel: QRResultViewModel
 
-    public init(viewModel: QRResultViewModel) {
+    /// Optional live camera view shown while scanning. When absent (tests,
+    /// previews) the screen shows a plain progress indicator.
+    private let scanningPreview: AnyView?
+
+    public init(viewModel: QRResultViewModel, scanningPreview: AnyView? = nil) {
         self.viewModel = viewModel
+        self.scanningPreview = scanningPreview
     }
 
     public var body: some View {
@@ -191,13 +196,18 @@ public struct QRResultScreen: View {
         }
     }
 
+    @ViewBuilder
     private var scanningView: some View {
-        VStack(spacing: 12) {
-            ProgressView()
-            Text("Scanning…")
-                .foregroundStyle(.secondary)
+        if let scanningPreview {
+            scanningPreview
+        } else {
+            VStack(spacing: 12) {
+                ProgressView()
+                Text("Scanning…")
+                    .foregroundStyle(.secondary)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
     private func foundView(

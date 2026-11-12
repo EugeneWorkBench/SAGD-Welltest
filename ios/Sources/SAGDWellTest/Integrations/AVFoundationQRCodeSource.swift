@@ -80,7 +80,15 @@ public final class AVFoundationQRCodeSource: NSObject, QRCodeSource, @unchecked 
         }
     }
 
+    /// The capture session, exposed so a preview layer can show the camera
+    /// feed while scanning. The session is configured lazily by `start()`.
+    public var previewSession: AVCaptureSession { captureSession }
+
     public func start() async {
+        // Ask for camera access up front. Without this the first scan builds
+        // its input before permission is granted, fails silently, and reports
+        // "unreadable". Returns immediately once the user has already decided.
+        _ = await AVCaptureDevice.requestAccess(for: .video)
         await withCheckedContinuation { (cont: CheckedContinuation<Void, Never>) in
             sessionQueue.async { [weak self] in
                 guard let self else { cont.resume(); return }

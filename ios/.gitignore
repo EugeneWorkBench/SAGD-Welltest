@@ -9,3 +9,7 @@ Package.resolved
 xcuserdata/
 DerivedData/
 *.xcuserstate
+
+# Local-only configuration (backend URL, token, signing team) and app build output
+App/Config/Local.xcconfig
+App/build/

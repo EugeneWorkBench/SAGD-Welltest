@@ -1,0 +1,10 @@
+// Committed defaults. Do NOT put real URLs, tokens or team IDs in this file.
+// Put them in Config/Local.xcconfig, which is git-ignored (see
+// Local.xcconfig.example). An empty URL makes the app run offline-only.
+
+SAGD_BACKEND_BASE_URL =
+SAGD_BACKEND_AUTH_TOKEN =
+DEVELOPMENT_TEAM =
+
+// Must stay last so local values override the defaults above.
+#include? "Local.xcconfig"

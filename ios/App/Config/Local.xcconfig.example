@@ -1,0 +1,16 @@
+// Copy this file to Local.xcconfig (same folder) and fill in your values.
+// Local.xcconfig is git-ignored so secrets never reach the repository.
+
+// Backend base URL. xcconfig treats "//" as a comment, so write the slashes
+// of "https://" as ":/$()/" exactly as below.
+SAGD_BACKEND_BASE_URL = https:/$()/api.your-company.example
+
+// Bearer token for the backend. Leave empty if the server needs none.
+// Note: a token set here is baked into the app binary. Fine for a closed
+// pilot; a production rollout should add per-user sign-in instead.
+SAGD_BACKEND_AUTH_TOKEN =
+
+// Your Apple Developer Team ID (10 characters), found at
+// developer.apple.com/account under Membership. Setting it here means the
+// signing Team survives regenerating the Xcode project.
+DEVELOPMENT_TEAM =

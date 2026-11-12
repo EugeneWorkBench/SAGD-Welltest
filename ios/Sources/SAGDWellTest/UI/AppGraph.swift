@@ -196,8 +196,13 @@ public final class AppGraph: @unchecked Sendable {
         configuration: AppConfiguration,
         fileManager: FileManager = .default,
         clock: SyncClock = SystemSyncClock(),
-        backgroundScheduler: BackgroundSyncScheduling = AppGraph.defaultBackgroundScheduler()
+        backgroundScheduler: BackgroundSyncScheduling? = nil
     ) throws -> AppGraph {
+
+        // Resolve the scheduler here rather than in a default argument: a
+        // `public` function's default expression cannot reference an
+        // `internal` helper, so the fallback lives in the body instead.
+        let backgroundScheduler = backgroundScheduler ?? AppGraph.defaultBackgroundScheduler()
 
         // 1. Local store: open the existing DB in place (persisted records
         //    reload after restart — Req 1.3) and the blob store, then reclaim
@@ -360,7 +365,11 @@ public final class AppGraph: @unchecked Sendable {
 
     /// The background sync scheduler. `BGTaskScheduler`-backed where available,
     /// otherwise a no-op.
-    private static func defaultBackgroundScheduler() -> BackgroundSyncScheduling {
+    ///
+    /// Must be at least as accessible as `make(...)`'s default argument that
+    /// references it; `internal` suffices since the default is evaluated
+    /// in-module at the call site.
+    static func defaultBackgroundScheduler() -> BackgroundSyncScheduling {
         #if canImport(BackgroundTasks)
         return BGTaskSyncScheduler()
         #else
@@ -509,6 +518,20 @@ extension AppGraph {
             coordinator: makeQRScannerCoordinator(),
             connectivity: connectivitySignal
         )
+    }
+
+    /// A scan session: the view model plus the code source it drives, so the
+    /// UI can attach a camera preview to that same source.
+    @MainActor
+    func makeQRScanSession() -> (viewModel: QRResultViewModel, source: QRCodeSource) {
+        let source = Self.makeQRCodeSource()
+        let coordinator = QRScannerCoordinator(
+            source: source,
+            lookup: makeWellLookupUseCase(),
+            clock: clock
+        )
+        let viewModel = QRResultViewModel(coordinator: coordinator, connectivity: connectivitySignal)
+        return (viewModel, source)
     }
 
     /// The escalation capture view model for a set of selectable wells.
