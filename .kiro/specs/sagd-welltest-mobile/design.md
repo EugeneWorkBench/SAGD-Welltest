@@ -430,6 +430,7 @@ flowchart TD
 - Miss handling branches on connectivity: online miss → "not found" + rescan (Req 6.3); offline miss → "unavailable offline" (Req 6.6). On an offline hit, the view is annotated as sourced from local storage (Req 6.5).
 
 Platform decode: iOS uses `AVCaptureMetadataOutput` with `.qr`/barcode object types; Android uses CameraX `ImageAnalysis` feeding ML Kit's barcode scanner. Both deliver the decoded string to the same `WellLookupUseCase`.
+**iOS live preview:** while scanning, the QR screen shows the camera feed (`AVCaptureVideoPreviewLayer` attached to the same `AVCaptureSession` the decoder uses) so the operator can aim at the code. Camera access is requested before the session starts, so the first scan after install does not fail silently as "unreadable".
 
 ## Geotagged Photo Escalation Flow
 
@@ -482,6 +483,30 @@ All endpoints accept the client-generated record `id` for idempotency. Captured-
 | `GET` | `/v1/wells?updatedSince={ts}` | JSON `[Well]` | Incremental reference-data sync |
 
 Pulled data is cached in the `Local_Store` so QR lookup works offline (Req 6.5). Error responses use standard HTTP status codes; `409`/`422` on push are treated as non-retryable and move the record toward `failed`, while `5x`/timeouts are retryable (count toward the 5-attempt limit).
+
+### Client pull behavior (iOS)
+
+The pull endpoints are only useful if the client calls them. On iOS, `AppGraph.refreshReferenceData()` runs at launch and on pull-to-refresh of the well list:
+
+1. `GET /v1/wells?updatedSince={marker}` returns wells changed since the last successful pull.
+2. For each returned well (small concurrent batches), the client pulls its test history and open maintenance tasks. The client writes all results into the `Local_Store`.
+3. The marker advances to the newest `updatedAt` **returned by the server** (not the device clock, so a wrong device clock cannot skip updates). It advances only after a pull that returned wells, and is stored in `UserDefaults`.
+
+Any network, HTTP or decoding failure returns an empty result and leaves the cache untouched, so a failed refresh changes nothing and the app keeps working offline.
+
+**Known limitation:** tests and tasks are re-pulled only for wells whose own record changed, so new tests on an otherwise unchanged well appear after that well next updates. A per-well refresh on QR lookup would close the gap.
+
+## App Configuration, Navigation, and Distribution (iOS)
+
+**Host app target.** The Swift package builds a library, which cannot launch. `ios/App/` holds a generated Xcode project (`generate_project.rb`) whose thin app target links the package and presents `SAGDWellTestRootView`. The package defines no `@main`, to avoid a duplicate entry point when linked.
+
+**Configuration.** The backend base URL and bearer token are read from `Info.plist` keys `SAGDBackendBaseURL` and `SAGDBackendAuthToken`, filled at build time from `ios/App/Config/Shared.xcconfig` (empty defaults, committed) and `Local.xcconfig` (git-ignored). With no URL the client falls back to `https://localhost`, so every push fails retryably and records stay queued locally. A token configured this way is embedded in the app binary; this suits a closed pilot only, and a wider rollout needs per-user authentication (still out of scope for this design).
+
+**Navigation.** The well list is the home screen. A bottom toolbar reaches the QR lookup, escalation capture and subcool estimator screens; selecting a well opens its production or injection form. Escalation photos come from the system camera, or the photo library on devices without one.
+
+**Debug sample data.** Debug builds with no backend URL insert a few sample wells and one open task into an empty store so the UI can be exercised offline. Release builds never include this, and it is skipped whenever a backend URL is configured.
+
+**Distribution.** The project carries a privacy manifest declaring UserDefaults and disk-space API use, a version and build number, and `ITSAppUsesNonExemptEncryption = NO` (to be confirmed with compliance). TestFlight is the recommended pilot channel; Apple Business Manager Custom Apps is the likely channel for a full company rollout.
 
 ## Correctness Properties
 

@@ -360,6 +360,31 @@ Property-based testing: each of the 24 design correctness properties is covered 
 
 - [x] 24. Final checkpoint — full build and all tests
   - Ensure all tests pass, ask the user if questions arise.
+  - **Status note (iOS):** on Xcode 27.2 / Swift 6.4 the iOS test target does not compile (`Arbitrary` conformance and SwiftCheck access errors in about nine property-test files). This was confirmed against the original code, so it is not caused by later changes. The "all tests pass" outcome is therefore not currently reproducible on iOS; see task 25.5.
+
+- [ ] 25. iOS: Backend connection, tool screens, and release readiness (post-MVP additions)
+  - [x] 25.1 Pull reference data into the local store at launch and on refresh
+    - `AppGraph.refreshReferenceData()`; server-derived `updatedAt` marker; failure leaves cache untouched (see design "Client pull behavior (iOS)")
+    - _Requirements: 6.2, 6.5_
+  - [x] 25.2 Externalize backend URL, token and signing team
+    - `Info.plist` keys filled from `Shared.xcconfig` / git-ignored `Local.xcconfig`; sample data skipped when a URL is set
+    - _Requirements: 2.1_
+  - [x] 25.3 Make the QR lookup, escalation and subcool screens reachable
+    - Bottom toolbar on the well list; live camera preview for QR; camera/photo-library picker for escalation photos; pull-to-refresh
+    - _Requirements: 5.2, 6.1, 6.2, 7.1_
+  - [x] 25.4 TestFlight preparation
+    - Host app project, placeholder app icon, privacy manifest, version/build numbers, export-compliance key
+  - [ ] 25.5 Restore a compiling iOS test suite
+    - Fix the property-test compile errors under the current toolchain, then re-run all tests
+  - [ ] 25.6 Verify pull and push against a real backend
+    - Confirm the client matches the server's routes, payloads and auth; test failure and retry paths
+    - _Requirements: 2.1, 2.3, 6.5, 7.6_
+  - [ ] 25.7 Run the new screens on a physical device
+    - QR scan with live preview, escalation with camera and GPS, pull-to-refresh
+  - [ ] 25.8 Replace embedded token with per-user sign-in before any wide rollout
+  - [ ] 25.9 Review Android for the same gaps
+    - Check whether Android invokes its pull client and exposes the QR and escalation screens; not reviewed as part of the iOS work above
+  - [ ] 25.10 Add crash reporting and a security/privacy review before wide rollout
 
 ## Notes
 
